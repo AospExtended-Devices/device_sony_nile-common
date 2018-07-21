@@ -169,4 +169,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # setup dm-verity configs.
 PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/platform/soc/c0c4000.sdhci/by-name/system
 PRODUCT_VENDOR_VERITY_PARTITION := /dev/block/platform/soc/c0c4000.sdhci/by-name/vendor
+
+# Bootanim
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# GAPPS
+GAPPS_VARIANT := micro
+GAPPS_EXCLUDED_PACKAGES := PackageInstallerGoogle
+TARGET_USE_GCAM := true
+
 $(call inherit-product, build/target/product/verity.mk)
