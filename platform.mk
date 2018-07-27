@@ -99,6 +99,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.sdm660
 
+# QCOM FM
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio \
+
 # QCOM Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
     qcom.bluetooth.soc=cherokee

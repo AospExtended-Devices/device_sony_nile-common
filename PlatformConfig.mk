@@ -74,6 +74,10 @@ BOARD_HAVE_BLUETOOTH_QCOM := true
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(PLATFORM_COMMON_PATH)/bluetooth
 WCNSS_FILTER_USES_SIBS := true
 
+# FM definitions for Qualcomm solution
+BOARD_HAVE_QCOM_FM := true
+BOARD_HAS_QCA_FM_SOC := "cherokee"
+
 # WiFi and BT MAC address setup
 BOARD_HAS_MIRROR_MACADDRESS := true
 
